@@ -1,0 +1,42 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 3, Errors: 0, Skipped: 3, Time elapsed: 758.243 sec <<< FAILURE! - in TestSuite
+OpenNewGreen(shakeDown_US_main.Shakedown_CreateReq_AddResp_Test)  Time elapsed: 160.106 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Timeout loading page after 160000ms
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-GAEG9SK', ip: '9.102.36.206', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.26.0, moz:headless: true, moz:processID: 14504, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5bc63ae7-1486-4811-aac1-51b6c26b441c
+	at shakeDown_US_main.Shakedown_CreateReq_AddResp_Test.OpenNewGreen(Shakedown_CreateReq_AddResp_Test.java:155)
+
+add_response(shakeDown_US_main.Shakedown_CreateReq_AddResp_Test)  Time elapsed: 184.086 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //button[contains(text(),'Log in')]' (tried for 160 second(s) with 500 milliseconds interval)
+	at shakeDown_US_main.Shakedown_CreateReq_AddResp_Test.add_response(Shakedown_CreateReq_AddResp_Test.java:164)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //button[contains(text(),'Log in')]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-GAEG9SK', ip: '9.102.36.206', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.26.0, moz:headless: true, moz:processID: 14504, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5bc63ae7-1486-4811-aac1-51b6c26b441c
+*** Element info: {Using=xpath, value=//button[contains(text(),'Log in')]}
+	at shakeDown_US_main.Shakedown_CreateReq_AddResp_Test.add_response(Shakedown_CreateReq_AddResp_Test.java:164)
+
+Reprice(shakeDown_US_main.Shakedown_CreateReq_AddResp_Test)  Time elapsed: 204.039 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //table[@class='custom-grid']/div[@class='ng-star-inserted']/tr[1]/td[2]/a' (tried for 160 second(s) with 500 milliseconds interval)
+	at shakeDown_US_main.Shakedown_CreateReq_AddResp_Test.Reprice(Shakedown_CreateReq_AddResp_Test.java:219)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //table[@class='custom-grid']/div[@class='ng-star-inserted']/tr[1]/td[2]/a
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-GAEG9SK', ip: '9.102.36.206', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.26.0, moz:headless: true, moz:processID: 14504, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5bc63ae7-1486-4811-aac1-51b6c26b441c
+*** Element info: {Using=xpath, value=//table[@class='custom-grid']/div[@class='ng-star-inserted']/tr[1]/td[2]/a}
+	at shakeDown_US_main.Shakedown_CreateReq_AddResp_Test.Reprice(Shakedown_CreateReq_AddResp_Test.java:219)
+

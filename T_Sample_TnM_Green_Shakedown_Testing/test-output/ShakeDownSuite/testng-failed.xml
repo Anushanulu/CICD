@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ShakeDownSuite]">
+  <test name="ShakeDownTest(failed)">
+    <classes>
+      <class name="shakeDown_US_main.Shakedown_CreateReq_AddResp">
+        <methods>
+          <include name="setup"/>
+          <include name="Reprice"/>
+        </methods>
+      </class> <!-- shakeDown_US_main.Shakedown_CreateReq_AddResp -->
+    </classes>
+  </test> <!-- ShakeDownTest(failed) -->
+</suite> <!-- Failed suite [ShakeDownSuite] -->
