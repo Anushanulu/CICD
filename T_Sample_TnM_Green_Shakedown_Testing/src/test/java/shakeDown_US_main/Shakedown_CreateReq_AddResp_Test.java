@@ -65,6 +65,7 @@ public class Shakedown_CreateReq_AddResp_Test
 		
 		url = Excel.getCellValue(xlsFilePath, sheet, 4, 2);
 		 System.out.println("before launching URL");
+		System.out.println("url------>"+url);
 		driver.get(url);
 		 System.out.println("launched URL");
 		driver.manage().window().maximize();
