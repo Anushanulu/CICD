@@ -41,11 +41,13 @@ public class Shakedown_CreateReq_AddResp_Test
 	@BeforeTest
 	public void setup() throws ClassNotFoundException, SQLException
 	{
+		 System.out.println("loading gecko driver");
 		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") +"\\geckodriver.exe");
 		// to run Firefox in Headless mode
 		FirefoxOptions op=new FirefoxOptions();
 		op.setHeadless(true);
 		driver=new FirefoxDriver(op);
+		 System.out.println("loading browser driver");
 
 		   //here
        // ((RemoteWebDriver) driver).setLogLevel(Level.INFO);
@@ -60,6 +62,7 @@ public class Shakedown_CreateReq_AddResp_Test
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		url = Excel.getCellValue(xlsFilePath, sheet, 4, 2);
 		driver.get(url);
+		 System.out.println("launched URL");
 		driver.manage().window().maximize();
 	}	
 
