@@ -47,7 +47,7 @@ public class Shakedown_CreateReq_AddResp_Test
 		FirefoxOptions op=new FirefoxOptions();
 		op.setHeadless(true);
 		driver=new FirefoxDriver(op);
-		System.out.println("loading browser driver");
+		System.out.println("loading browser");
 
 		//here//
 		// ((RemoteWebDriver) driver).setLogLevel(Level.INFO);
