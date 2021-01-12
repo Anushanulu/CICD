@@ -24,7 +24,7 @@ import java.util.logging.Level;
 @Listeners(generics.TestNG_Listeners.class)
 public class Shakedown_CreateReq_AddResp_Test
 {
-	// TestNG logger
+	// TestNG logger//
 
 	//public static Logger log = Logger.getLogger("TnM");
 
@@ -41,25 +41,33 @@ public class Shakedown_CreateReq_AddResp_Test
 	@BeforeTest
 	public void setup() throws ClassNotFoundException, SQLException
 	{
+		System.out.println("loading gecko driver");
 		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") +"\\geckodriver.exe");
 		// to run Firefox in Headless mode
 		FirefoxOptions op=new FirefoxOptions();
 		op.setHeadless(true);
 		driver=new FirefoxDriver(op);
+		System.out.println("loading browser driver");
 
-		   //here//
-       // ((RemoteWebDriver) driver).setLogLevel(Level.INFO);
-        
+		//here//
+		// ((RemoteWebDriver) driver).setLogLevel(Level.INFO);
+
 		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\SanjayKushwaha\\Desktop\\Selenium\\chromedriver_win32\\chromedriver.exe");
 		//driver = new ChromeDriver();
-       // DesiredCapabilities cap =new DesiredCapabilities();
-       // cap.chrome().setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-        //
+		// DesiredCapabilities cap =new DesiredCapabilities();
+		// cap.chrome().setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+
+
 		driver.manage().deleteAllCookies();
+		System.out.println("Deleted cookies");
 		driver.manage().timeouts().pageLoadTimeout(160, TimeUnit.SECONDS);
+		System.out.println("Applying implicit wait");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
 		url = Excel.getCellValue(xlsFilePath, sheet, 4, 2);
+
 		driver.get(url);
+		System.out.println("Launched url------>"+url);
 		driver.manage().window().maximize();
 	}	
 
@@ -67,7 +75,7 @@ public class Shakedown_CreateReq_AddResp_Test
 	@Test(priority=0)
 	public void RIPC_Login() throws InterruptedException 
 	{
-	
+
 		Step01_CreateRequest login = new Step01_CreateRequest(driver);
 		try {
 			login.login();
@@ -163,7 +171,7 @@ public class Shakedown_CreateReq_AddResp_Test
 		Step02_AddResponse_US_NewApp addresp = new Step02_AddResponse_US_NewApp(driver); 
 		addresp.login();
 		addresp.openRequest();
-	
+
 		for (int i=1; i<2; i++)
 		{
 			if(i==1)
