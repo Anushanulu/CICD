@@ -56,11 +56,15 @@ public class Shakedown_CreateReq_AddResp_Test
 		//driver = new ChromeDriver();
        // DesiredCapabilities cap =new DesiredCapabilities();
        // cap.chrome().setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-        
+         System.out.println("before deleting cookies");
 		driver.manage().deleteAllCookies();
+		 System.out.println("after deleting cookies");
 		driver.manage().timeouts().pageLoadTimeout(160, TimeUnit.SECONDS);
+		 System.out.println("before applying implicit wait");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
 		url = Excel.getCellValue(xlsFilePath, sheet, 4, 2);
+		 System.out.println("before launching URL");
 		driver.get(url);
 		 System.out.println("launched URL");
 		driver.manage().window().maximize();
