@@ -24,7 +24,7 @@ import java.util.logging.Level;
 @Listeners(generics.TestNG_Listeners.class)
 public class Shakedown_CreateReq_AddResp_Test
 {
-	// TestNG logger//
+	// TestNG logger///
 
 	//public static Logger log = Logger.getLogger("TnM");
 
