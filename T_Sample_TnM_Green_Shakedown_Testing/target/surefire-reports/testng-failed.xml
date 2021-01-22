@@ -1,24 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [ShakeDownSuite]" parallel="tests">
-  <test name="ShakeDownTest">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Test_CSATM_Sanity_Script]" parallel="tests">
+  <test name="Regression suite 1">
     <classes>
-      <class name="shakeDown_US_main.Shakedown_CreateReq_AddResp_Test"/>
+      <class name="tnm_review_GB_main.CreateRequest_GB"/>
+      <class name="tnm_review_IND_main.CreateRequest_IND"/>
+      <class name="tnm_review_US_main.CreateRequest_US"/>
     </classes>
-  </test> <!-- ShakeDownTest -->
-  <test name="ShakeDownTest(failed)" parallel="tests">
-    <classes>
-      <class name="shakeDown_US_main.Shakedown_CreateReq_AddResp_Test">
-        <methods>
-          <include name="Withdraw"/>
-          <include name="Reactivate"/>
-          <include name="Resubmit"/>
-          <include name="setup"/>
-          <include name="add_response"/>
-          <include name="OpenNewGreen"/>
-          <include name="Reprice"/>
-        </methods>
-      </class> <!-- shakeDown_US_main.Shakedown_CreateReq_AddResp_Test -->
-    </classes>
-  </test> <!-- ShakeDownTest(failed) -->
-</suite> <!-- Failed suite [ShakeDownSuite] -->
+  </test> <!-- Regression suite 1 -->
+</suite> <!-- Failed suite [Test_CSATM_Sanity_Script] -->

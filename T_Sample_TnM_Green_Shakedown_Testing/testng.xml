@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="ShakeDownSuite" parallel="tests" preserve-order="true" >
-  <test name="ShakeDownTest" >
-    <classes >
-      <class name="shakeDown_US_main.Shakedown_CreateReq_AddResp_Test"/>
+<suite name="Test_CSATM_Sanity_Script" parallel="tests" preserve-order="true" >
+  <test name="Regression suite 1" >
+    <!-- testing-->
+    <classes>
+      <class name="tnm_review_GB_main.CreateRequest_GB"/>
+      <class name="tnm_review_IND_main.CreateRequest_IND"/> 
+      <class name="tnm_review_US_main.CreateRequest_US"/>
     </classes>
-  </test> <!-- ShakeDownTest -->
+ </test>
 </suite> <!-- ShakeDownSuite -->
