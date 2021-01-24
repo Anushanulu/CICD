@@ -172,16 +172,15 @@ public class Step1_CreateRequest_IN {
 		try {
 
 			//Totp_Link.click();
-			String otpKeyStr = "47UORWOB2YBVMXQE"; // <- this 2FA secret key for csatestus2@c25a0161.toronto.ca.ibm.com
+			//String otpKeyStr = "47UORWOB2YBVMXQE"; // <- this 2FA secret key for csatestus2@c25a0161.toronto.ca.ibm.com
+			String otpKeyStr = "VUESKO3ATJJPQRG3";
 			Totp totp = new Totp(otpKeyStr);
 			String twoFactorCode = totp.now();
 			
-			Authenticator_App_option.click();
-			WebDriverWait wait02 = new WebDriverWait(driver, 180);
-			wait02.until(ExpectedConditions.visibilityOf(OTP_TextBox));
-
 			OTP_TextBox.sendKeys(twoFactorCode);
+			System.out.println("value fetched from box= "+OTP_TextBox.getAttribute("value"));
 			OTP_Submit_Button.click();
+			System.out.println("clicked on OTP submit button");
 		}
 		catch (Exception e) {
 			System.out.println("no OTP screen");

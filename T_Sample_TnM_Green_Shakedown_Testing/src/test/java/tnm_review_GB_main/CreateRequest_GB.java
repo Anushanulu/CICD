@@ -46,12 +46,13 @@ public class CreateRequest_GB {
 				       System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/geckodriver.exe");
 				       //System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\geckodriver");
 					  
-				       FirefoxOptions firefoxOptions = new FirefoxOptions();
+				      // FirefoxOptions firefoxOptions = new FirefoxOptions();
 				      // firefoxOptions.addArguments("-private");
 				       
 					  //firefoxOptions.setHeadless(true);
 					   //firefoxOptions.setBinary(firefoxfBinary);
-				        driver = new FirefoxDriver(firefoxOptions);
+				       // driver = new FirefoxDriver(firefoxOptions);
+				        driver = new FirefoxDriver();
 //		 System.setProperty("webdriver.chrome.driver", "C://Users//SriSwathiAnushaNulu//Documents//Softwares//chromedriver_win32//chromedriver.exe");
 //				        driver=new ChromeDriver();
 				       driver.manage().window().maximize();
@@ -68,14 +69,14 @@ public class CreateRequest_GB {
 		    
 	}	
 
-  @Test(priority=0)
+/*  @Test(priority=0)
 	public void RIPC_Login() throws IOException, InterruptedException 
 	{
 System.out.println("before login ");
 	  Step1_CreateRequest_GB login = new Step1_CreateRequest_GB(driver);
 		login.login();
 		System.out.println("after login");
-	}	
+	}*/	
   @Test(priority=1)
 	public void switching_insta() 
 	{

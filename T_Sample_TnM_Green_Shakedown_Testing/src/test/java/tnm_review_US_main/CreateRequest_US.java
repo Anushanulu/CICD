@@ -57,13 +57,13 @@ public class CreateRequest_US {
 		driver.manage().window().maximize();
 	}	
 
-  @Test(priority=0)
+  /*@Test(priority=0)
 	public void RIPC_Login() throws IOException, InterruptedException 
 	{
 
 	  Step1_CreateRequest_US login = new Step1_CreateRequest_US(driver);
 		login.login();
-	}
+	}*/
   @Test(priority=1)
 	public void switching_insta() 
 	{

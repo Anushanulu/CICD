@@ -38,14 +38,15 @@ public class CreateRequest_IND {
 	@BeforeTest
 	public void setup()
 	{
-		 FirefoxBinary firefoxfBinary = new FirefoxBinary();
+		// FirefoxBinary firefoxfBinary = new FirefoxBinary();
 	       System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/geckodriver.exe");
-	       FirefoxOptions firefoxOptions = new FirefoxOptions();
+	       //FirefoxOptions firefoxOptions = new FirefoxOptions();
 	      // firefoxOptions.addArguments("-private");
 	       
-		  firefoxOptions.setHeadless(true);
+		 // firefoxOptions.setHeadless(true);
 		   //firefoxOptions.setBinary(firefoxfBinary);
-	        driver = new FirefoxDriver(firefoxOptions);
+	      //  driver = new FirefoxDriver(firefoxOptions);
+		  driver = new FirefoxDriver();
 	       driver.manage().window().maximize();
 	       driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
 		url = Excel.getCellValue(xlsFilePath, "Login", 1, 2);

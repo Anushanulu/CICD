@@ -4,13 +4,13 @@
   <test name="Regression Test_GB" >
     <!-- testing-->
     <classes>
-      <class name="tnm_review_GB_main.CreateRequest_GB"/>
+      <class name="tnm_review_GB_main.CreateRequest_IND"/>
     </classes>
  </test>
   <test name="Regression Test_IN" >
     <!-- testing-->
     <classes>
-      <class name="tnm_review_IND_main.CreateRequest_IND"/> 
+      <class name="tnm_review_IND_main.CreateRequest_GB"/> 
     </classes>
  </test>
   <test name="Regression Test_US" >

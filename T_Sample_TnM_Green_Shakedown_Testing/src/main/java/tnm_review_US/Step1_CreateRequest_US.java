@@ -180,12 +180,13 @@ public class Step1_CreateRequest_US {
 			Totp totp = new Totp(otpKeyStr);
 			String twoFactorCode = totp.now();
 			
-			Authenticator_App_option.click();
-			WebDriverWait wait02 = new WebDriverWait(driver, 180);
-			wait02.until(ExpectedConditions.visibilityOf(OTP_TextBox));
+			
 
 			OTP_TextBox.sendKeys(twoFactorCode);
+			System.out.println("value fetched from box= "+OTP_TextBox.getAttribute("value"));
+		
 			OTP_Submit_Button.click();
+			System.out.println("clicked on OTP submit button");
 		}
 		catch (Exception e) {
 			System.out.println("no OTP screen");
@@ -196,7 +197,7 @@ public class Step1_CreateRequest_US {
 		public void switch_instance()
 		{
 			WebDriverWait wait02 = new WebDriverWait(driver, 180);
-			wait02.until(ExpectedConditions.visibilityOf(Create_New_Request));
+			wait02.until(ExpectedConditions.visibilityOf(switch_instance));
 			switch_instance.click();
 			Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
 			Select cntry = new Select(select_instance);

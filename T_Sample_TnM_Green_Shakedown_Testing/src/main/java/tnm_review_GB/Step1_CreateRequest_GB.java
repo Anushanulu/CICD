@@ -186,6 +186,7 @@ public class Step1_CreateRequest_GB {
 
 			OTP_TextBox.sendKeys(twoFactorCode);
 			System.out.println("value fetched from box= "+OTP_TextBox.getAttribute("value"));
+			Thread.sleep(5000);
 			OTP_Submit_Button.click();
 			System.out.println("clicked on OTP submit button");
 		}
@@ -198,7 +199,7 @@ public class Step1_CreateRequest_GB {
 		public void switch_instance()
 		{
 			WebDriverWait wait02 = new WebDriverWait(driver, 180);
-			wait02.until(ExpectedConditions.visibilityOf(Create_New_Request));
+			wait02.until(ExpectedConditions.visibilityOf(switch_instance));
 			switch_instance.click();
 			Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\UK");
 			Select cntry = new Select(select_instance);

@@ -3,16 +3,23 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="shakeDown_US_main.Shakedown_CreateReq_AddResp_Test">
+      <class name="tnm_review_GB_main.CreateRequest_GB">
         <methods>
-          <include name="Withdraw"/>
-          <include name="Reactivate"/>
-          <include name="Resubmit"/>
+          <include name="skill_req"/>
+          <include name="select_requestor"/>
+          <include name="sup_slection"/>
+          <include name="alert_call"/>
+          <include name="req_details"/>
+          <include name="loc_details"/>
+          <include name="switching_insta"/>
+          <include name="select_jrss"/>
+          <include name="switch_cntry"/>
           <include name="setup"/>
-          <include name="add_response"/>
-          <include name="Reprice"/>
+          <include name="create_req"/>
+          <include name="rates_details"/>
+          <include name="chang_requestor"/>
         </methods>
-      </class> <!-- shakeDown_US_main.Shakedown_CreateReq_AddResp_Test -->
+      </class> <!-- tnm_review_GB_main.CreateRequest_GB -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
