@@ -9,6 +9,7 @@ import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 //import io.github.bonigarcia.wdm.WebDriverManager;
@@ -16,7 +17,7 @@ import lib.Excel;
 import tnm_review_IN.Step1_CreateRequest_IN;
 //import tnm_review_IND.Step1_CreateRequest_Ind;
 
-
+@Listeners(generics.TestNG_Listeners.class)
 public class CreateRequest_IND {
 	
 	//public static Logger log = Logger.getLogger("TnM");
