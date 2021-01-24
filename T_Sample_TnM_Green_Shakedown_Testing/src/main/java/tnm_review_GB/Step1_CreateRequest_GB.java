@@ -187,7 +187,9 @@ public class Step1_CreateRequest_GB {
 			wait02.until(ExpectedConditions.visibilityOf(OTP_TextBox));
 
 			OTP_TextBox.sendKeys(twoFactorCode);
+			System.out.println("value fetched from box= "+OTP_TextBox.getAttribute("value"));
 			OTP_Submit_Button.click();
+			System.out.println("clicked on OTP submit button");
 		}
 		catch (Exception e) {
 			System.out.println("no OTP screen");
