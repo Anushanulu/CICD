@@ -35,7 +35,7 @@ public class CreateRequest_US {
 
 	public WebDriver driver;
 	
-	@BeforeTest
+	/*@BeforeTest
 	public void setup()
 	{
 		 FirefoxBinary firefoxfBinary = new FirefoxBinary();
@@ -56,7 +56,7 @@ public class CreateRequest_US {
 		driver.get(url); 
 		driver.manage().window().maximize();
 	}	
-
+*/
   /*@Test(priority=0)
 	public void RIPC_Login() throws IOException, InterruptedException 
 	{

@@ -38,7 +38,7 @@ public class CreateRequest_GB {
 	public WebDriver driver;
 	
 	
-	@BeforeTest
+/*	@BeforeTest
 	public void setup()
 	{
 		String url="https://pesproxy051.boulder.ibm.com/procurement/csa/common/enUS/index.html";
@@ -68,7 +68,7 @@ public class CreateRequest_GB {
 		
 		    
 	}	
-
+*/
 /*  @Test(priority=0)
 	public void RIPC_Login() throws IOException, InterruptedException 
 	{
