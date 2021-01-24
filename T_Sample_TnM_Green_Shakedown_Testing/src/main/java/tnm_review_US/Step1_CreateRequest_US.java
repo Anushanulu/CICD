@@ -170,7 +170,7 @@ public class Step1_CreateRequest_US {
 		login_password.clear();
 		login_password.sendKeys(Excel.getCellValue(xlsFilePath, sheet, 1, 1));
 
-		Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
+		//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
 		login_Button.click();
 		
 		try {
@@ -199,7 +199,7 @@ public class Step1_CreateRequest_US {
 			WebDriverWait wait02 = new WebDriverWait(driver, 180);
 			wait02.until(ExpectedConditions.visibilityOf(switch_instance));
 			switch_instance.click();
-			Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
+			//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
 			Select cntry = new Select(select_instance);
 			cntry.selectByVisibleText("Americas");	
 			btnGo.click();
@@ -210,7 +210,7 @@ public class Step1_CreateRequest_US {
 		{
 			WebDriverWait wait03 = new WebDriverWait(driver, 180);
 			wait03.until(ExpectedConditions.visibilityOf(Create_New_Request));
-			Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
+			//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
 			Create_New_Request.click();
 
 		}
@@ -219,7 +219,7 @@ public class Step1_CreateRequest_US {
 		{
 			WebDriverWait wait04 = new WebDriverWait(driver, 180);
 			wait04.until(ExpectedConditions.visibilityOf(Country_select));
-			Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
+			//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
 			Select cntry1 = new Select(Country_select);
 			cntry1.selectByVisibleText("United States");
 		}
@@ -232,9 +232,9 @@ public class Step1_CreateRequest_US {
 
 			New_Request.click();
 			Time_Materials.click();
-			Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
+			//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
 			Continue.click();
-			Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
+			//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
 		}
 		
 		//Switching to other country
@@ -242,14 +242,14 @@ public class Step1_CreateRequest_US {
 		{
 			WebDriverWait wait06 = new WebDriverWait(driver, 180);
 			wait06.until(ExpectedConditions.visibilityOf(Change_req));
-			Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
+			//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
 			Change_req.click();
-			Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
+			//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
 			email_txtbox.sendKeys("acarruth@us.ibm.com");
 			go_btn.click();
-			Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
+			//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
 			name_select.click();
-			Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
+			//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
 			Use_as_req.click();
 		}
 		public void Select_Requestor(){
@@ -268,7 +268,7 @@ public class Step1_CreateRequest_US {
 			Rog.selectByVisibleText(RO);
 
 			/* code to capture screenshot */
-			Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
+			//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
 			Continue.click();		
 		}
 		public void Select_JRSS()
@@ -295,7 +295,7 @@ public class Step1_CreateRequest_US {
 			SSlistbox.selectByVisibleText(SS);
 				
 			/* code to capture screenshot */
-			Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
+			//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
 			Continue.click();
 
 		}
@@ -340,7 +340,7 @@ public class Step1_CreateRequest_US {
 			WebDriverWait wait13 = new WebDriverWait(driver, 180);
 			wait13.until(ExpectedConditions.visibilityOf(UseAsManager_Button));
 			/* code to capture screenshot */
-			Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
+			//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
 			UseAsManager_Button.click();
 				}
 			}
@@ -375,7 +375,7 @@ public class Step1_CreateRequest_US {
 			Accounting_Type.click();
 			/* code to capture screenshot */
 			
-			Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
+			//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
 			Continue.click();
 		}
 
@@ -400,7 +400,7 @@ public class Step1_CreateRequest_US {
 				e.printStackTrace();
 			} 
 			Flowdown_NoRadio.click();
-			Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
+			//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
 			Continue_2.click();
 		}
 		public boolean isAlertPresent() 
@@ -448,22 +448,24 @@ public class Step1_CreateRequest_US {
 			Select skill3 = new Select(Core_skill_3);
 			skill3.selectByVisibleText("0 No Experience");
 			
-			Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
+			//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
 			Continue_2.click();
 
 		}
 		
 		//Supplier selection page
-		public void SupplierSelectionPage()
+		public void SupplierSelectionPage() throws InterruptedException
 		{
 			WebDriverWait wait17 = new WebDriverWait(driver, 160);
-			wait17.until(ExpectedConditions.visibilityOf(secondary_supp));
+			wait17.until(ExpectedConditions.visibilityOf(Continue));
 
 			secondary_supp.click();
+			Thread.sleep(1000);
 			Deselect_All.click();
+			Thread.sleep(500);
 			RadioButton_UStestVendor.click();
 			//Primary_supp.click();
-			Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
+			//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
 
 			Continue.click();
 
@@ -480,7 +482,7 @@ public class Step1_CreateRequest_US {
 			SuppSelectionJustification.sendKeys("test");
 
 			/* code to capture screenshot */
-			Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
+			//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
 
 			Continue.click();
 
@@ -489,7 +491,7 @@ public class Step1_CreateRequest_US {
 			wait20.until(ExpectedConditions.visibilityOf(ContinueToRequestSummary));
 
 			/* code to capture screenshot */
-			Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
+			//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
 
 
 			ContinueToRequestSummary.click();
@@ -498,7 +500,7 @@ public class Step1_CreateRequest_US {
 			wait21.until(ExpectedConditions.visibilityOf(SubmitRequest));
 
 			/* code to capture screenshot */
-			Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
+			//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\US");
 			//SaveasDraft.click();
 			//SubmitRequest.click();
 			

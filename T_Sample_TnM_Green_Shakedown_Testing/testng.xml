@@ -4,19 +4,8 @@
   <test name="Regression Test_IN" >
     <!-- testing-->
     <classes>
-      <class name="tnm_review_IND_main.CreateRequest_IND"/>
+      <class name="tnm_review_IND_main.CreateRequest"/>
     </classes>
  </test>
-  <test name="Regression Test_GB" >
-    <!-- testing-->
-    <classes>
-      <class name="tnm_review_GB_main.CreateRequest_GB"/> 
-    </classes>
- </test>
-  <test name="Regression Test_US" >
-    <!-- testing-->
-    <classes>
-      <class name="tnm_review_US_main.CreateRequest_US"/>
-    </classes>
- </test>
+ 
 </suite> <!-- ShakeDownSuite -->

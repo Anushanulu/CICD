@@ -166,7 +166,7 @@ public class Step1_CreateRequest_IN {
 		login_password.clear();
 		login_password.sendKeys(Excel.getCellValue(xlsFilePath, "Login", 1, 1));
 
-		Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\IND");
+		//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\IND");
 		login_Button.click();
 		
 		try {
@@ -194,7 +194,7 @@ public class Step1_CreateRequest_IN {
   	WebDriverWait wait01 = new WebDriverWait(driver, 180);
 		wait01.until(ExpectedConditions.visibilityOf(Create_New_Request));
 		
-		Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\IND");
+		//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\IND");
   	Create_New_Request.click();
   	
   }
@@ -206,7 +206,7 @@ public class Step1_CreateRequest_IN {
 		
 		New_Request.click();
 		Time_Materials.click();
-		Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\IND");
+		//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\IND");
 		Continue.click();
 		
 	}
@@ -241,7 +241,7 @@ public class Step1_CreateRequest_IN {
 		
 		
 		 /* code to capture screenshot */
-		Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\IND");
+		//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\IND");
 		Continue.click();	
 		
 		
@@ -266,7 +266,7 @@ public class Step1_CreateRequest_IN {
 	SSlistbox.selectByVisibleText(SS);
 	
 	 /* code to capture screenshot */
-	Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\IND");
+	//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\IND");
 		
 		try 
 		{
@@ -338,7 +338,7 @@ public class Step1_CreateRequest_IN {
    
 	/* code to capture screenshot */
 
-	Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\IND");
+	//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\IND");
 
 	UseAsManager_Button.click();
 
@@ -357,7 +357,7 @@ public class Step1_CreateRequest_IN {
 	Accounting_Type_I.click();
 	
 	
-	Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\IND");
+	//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\IND");
 	
 	Continue.click();
 	}
@@ -390,7 +390,7 @@ public class Step1_CreateRequest_IN {
 		e.printStackTrace();
 	}  
  Flowdown_yes.click();
- Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\IND");
+ //Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\IND");
  Continue_2.click();
   }
  public boolean isAlertPresent() 
@@ -435,7 +435,7 @@ public class Step1_CreateRequest_IN {
 	Select s4 = new Select(CoreSkill2);
 	s4.selectByVisibleText("1 Knowledge/some job experience");
  // ST_time.sendKeys(Keys.HOME,Keys.chord(Keys.SHIFT,Keys.END),"12");
-	Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\IND");
+	//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\IND");
   Continue_2.click();
 	
 }
@@ -465,7 +465,7 @@ public class Step1_CreateRequest_IN {
 		
 		
 		 /* code to capture screenshot */
-		Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\IND");
+		//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\IND");
 			
 			try 
 			{
@@ -480,7 +480,7 @@ public class Step1_CreateRequest_IN {
 		WebDriverWait wait7 = new WebDriverWait(driver, 160);
 		wait7.until(ExpectedConditions.visibilityOf(SubmitRequest));
 		
-		Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\UK");
+		//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\UK");
 		//SaveasDraft.click();
 		//SubmitRequest.click();
 	
