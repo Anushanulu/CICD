@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Test_CSATM_Sanity_Script" parallel="false" preserve-order="true" thread-count = "1" >
-  <test name="Regression Test_IN" >
+  <test name="Sanity Test" >
     <!-- testing-->
     <classes>
-      <class name="tnm_review_IND_main.CreateRequest"/>
+      <class name="tnm_review_main.CreateRequest"/>
     </classes>
  </test>
  

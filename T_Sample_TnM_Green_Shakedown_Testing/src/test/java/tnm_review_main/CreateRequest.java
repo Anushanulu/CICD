@@ -1,4 +1,4 @@
-package tnm_review_IND_main;
+package tnm_review_main;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -43,17 +43,16 @@ public class CreateRequest {
 	{
 		// FirefoxBinary firefoxfBinary = new FirefoxBinary();
 	       System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/geckodriver.exe");
-	       //FirefoxOptions firefoxOptions = new FirefoxOptions();
+	       FirefoxOptions firefoxOptions = new FirefoxOptions();
 	      // firefoxOptions.addArguments("-private");
 	       
-		 // firefoxOptions.setHeadless(true);
-		   //firefoxOptions.setBinary(firefoxfBinary);
-	      //  driver = new FirefoxDriver(firefoxOptions);
-		  driver = new FirefoxDriver();
+		  firefoxOptions.setHeadless(true);
+		  // firefoxOptions.setBinary(firefoxfBinary);
+	       // driver = new FirefoxDriver(firefoxOptions);
+		  driver = new FirefoxDriver(firefoxOptions);
 	       driver.manage().window().maximize();
 	       driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
 		url = Excel.getCellValue(xlsFilePath, "Login", 1, 2);
-		
 	      
 		driver.get(url); 
 		driver.manage().window().maximize();
@@ -239,28 +238,28 @@ public class CreateRequest {
 		
 	}	
  @Test(priority=23)
-	public void switching_instIN() 
+	public void switching_inst_US() 
 	{
 
 	  Step1_CreateRequest_US insta = new Step1_CreateRequest_US(driver);
 		insta.switch_instance();
 	}
 @Test(priority=24)
-	public void create_req_IN() 
+	public void create_req_US() 
 	{
 
 	  Step1_CreateRequest_US req = new Step1_CreateRequest_US(driver);
 		req.Create_New_Request();
 	}
 @Test(priority=25)
-	public void switch_cntry_IN() 
+	public void switch_cntry_US() 
 	{
 
 	  Step1_CreateRequest_US cntry = new Step1_CreateRequest_US(driver);
 	   cntry.switch_country();
 	}
 @Test(priority=26)
-	public void skill_req_IN() 
+	public void skill_req_US() 
 	{
 
 	  Step1_CreateRequest_US skillreq = new Step1_CreateRequest_US(driver);
@@ -268,7 +267,7 @@ public class CreateRequest {
 		
 	}		
 @Test(priority=27)
-	public void chang_requestor_IN() 
+	public void chang_requestor_US() 
 	{
 
 	Step1_CreateRequest_US chngreq = new Step1_CreateRequest_US(driver);
@@ -276,7 +275,7 @@ public class CreateRequest {
 		
 	}	
 @Test(priority=28)
-	public void select_requestor_IN() 
+	public void select_requestor_US() 
 	{
 
 	Step1_CreateRequest_US selectreq = new Step1_CreateRequest_US(driver);
@@ -284,7 +283,7 @@ public class CreateRequest {
 		
 	}
 @Test(priority=29)
-	public void select_jrss_IN() 
+	public void select_jrss_US() 
 	{
 
 	Step1_CreateRequest_US jrss = new Step1_CreateRequest_US(driver);
@@ -292,7 +291,7 @@ public class CreateRequest {
 		
 	}
 @Test(priority=30)
-	public void req_details_IN() 
+	public void req_details_US() 
 	{
 
 	Step1_CreateRequest_US reqdetials = new Step1_CreateRequest_US(driver);
@@ -300,7 +299,7 @@ public class CreateRequest {
 		
 	}
 @Test(priority=31)
-	public void loc_details_IN() 
+	public void loc_details_US() 
 	{
 
 	Step1_CreateRequest_US loc = new Step1_CreateRequest_US(driver);
@@ -308,7 +307,7 @@ public class CreateRequest {
 		
 	}
 @Test(priority=32)
-	public void alert_call_IN() 
+	public void alert_call_US() 
 	{
 
 	Step1_CreateRequest_US call = new Step1_CreateRequest_US(driver);
@@ -316,7 +315,7 @@ public class CreateRequest {
 		
 	}
 @Test(priority=33)
-	public void rates_details_IN() 
+	public void rates_details_US() 
 	{
 
 	Step1_CreateRequest_US rate = new Step1_CreateRequest_US(driver);
@@ -324,7 +323,7 @@ public class CreateRequest {
 		
 	}
 @Test(priority=34)
-	public void sup_slection_IN() throws InterruptedException 
+	public void sup_slection_US() throws InterruptedException 
 	{
 
 	Step1_CreateRequest_US sup = new Step1_CreateRequest_US(driver);

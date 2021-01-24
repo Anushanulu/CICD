@@ -154,6 +154,7 @@ public class Step1_CreateRequest_IN {
 		loginToContractor_Link.click();
 		WebDriverWait wait00 = new WebDriverWait(driver, 180);
 		wait00.until(ExpectedConditions.visibilityOf(cred_login));
+		Thread.sleep(2000);
 		cred_login.click();
 		
 		//new login changes

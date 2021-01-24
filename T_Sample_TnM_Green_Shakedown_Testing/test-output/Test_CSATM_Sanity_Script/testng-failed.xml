@@ -1,49 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Test_CSATM_Sanity_Script]">
-  <test name="Regression Test_IN(failed)">
+  <test name="Sanity Test(failed)">
     <classes>
-      <class name="tnm_review_IND_main.CreateRequest_IND">
+      <class name="tnm_review_main.CreateRequest">
         <methods>
-          <include name="setup"/>
-          <include name="sup_slection_GB"/>
-          <include name="switch_cntry"/>
+          <include name="req_details"/>
+          <include name="alert_call"/>
+          <include name="select_jrss_US"/>
+          <include name="switching_inst_US"/>
+          <include name="skill_req"/>
+          <include name="RIPC_Login"/>
           <include name="rates_details_GB"/>
           <include name="chang_requestor"/>
-          <include name="loc_details_GB"/>
-          <include name="req_details_GB"/>
-          <include name="select_requestor_GB"/>
+          <include name="rates_details_US"/>
+          <include name="select_jrss"/>
+          <include name="sup_slection_GB"/>
+          <include name="chang_requestor_US"/>
+          <include name="create_req_GB"/>
           <include name="skill_req_GB"/>
           <include name="select_jrss_GB"/>
-          <include name="alert_call_GB"/>
-          <include name="create_req_GB"/>
-        </methods>
-      </class> <!-- tnm_review_IND_main.CreateRequest_IND -->
-    </classes>
-  </test> <!-- Regression Test_IN(failed) -->
-  <test name="Regression Test_US(failed)">
-    <classes>
-      <class name="tnm_review_IND_main.CreateRequest_IND">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- tnm_review_IND_main.CreateRequest_IND -->
-      <class name="tnm_review_US_main.CreateRequest_US">
-        <methods>
-          <include name="alert_call"/>
-          <include name="chang_requestor"/>
+          <include name="skill_req_US"/>
+          <include name="create_req_US"/>
+          <include name="loc_details_GB"/>
+          <include name="sup_slection_US"/>
+          <include name="loc_details_US"/>
+          <include name="select_requestor"/>
+          <include name="rates_details"/>
+          <include name="req_details_GB"/>
+          <include name="switch_cntry_US"/>
+          <include name="select_requestor_GB"/>
           <include name="create_req"/>
           <include name="sup_slection"/>
-          <include name="select_jrss"/>
+          <include name="setup"/>
+          <include name="req_details_US"/>
           <include name="switch_cntry"/>
-          <include name="req_details"/>
-          <include name="loc_details"/>
-          <include name="rates_details"/>
-          <include name="skill_req"/>
+          <include name="alert_call_US"/>
+          <include name="select_requestor_US"/>
           <include name="switching_insta"/>
-          <include name="select_requestor"/>
+          <include name="alert_call_GB"/>
+          <include name="loc_details"/>
         </methods>
-      </class> <!-- tnm_review_US_main.CreateRequest_US -->
+      </class> <!-- tnm_review_main.CreateRequest -->
     </classes>
-  </test> <!-- Regression Test_US(failed) -->
+  </test> <!-- Sanity Test(failed) -->
 </suite> <!-- Failed suite [Test_CSATM_Sanity_Script] -->

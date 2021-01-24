@@ -3,12 +3,45 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="tnm_review_IND_main.CreateRequest">
+      <class name="tnm_review_main.CreateRequest">
         <methods>
-          <include name="setup"/>
+          <include name="req_details"/>
+          <include name="alert_call"/>
+          <include name="select_jrss_US"/>
+          <include name="switching_inst_US"/>
+          <include name="skill_req"/>
+          <include name="RIPC_Login"/>
+          <include name="rates_details_GB"/>
+          <include name="chang_requestor"/>
+          <include name="rates_details_US"/>
+          <include name="select_jrss"/>
           <include name="sup_slection_GB"/>
+          <include name="chang_requestor_US"/>
+          <include name="create_req_GB"/>
+          <include name="skill_req_GB"/>
+          <include name="select_jrss_GB"/>
+          <include name="skill_req_US"/>
+          <include name="create_req_US"/>
+          <include name="loc_details_GB"/>
+          <include name="sup_slection_US"/>
+          <include name="loc_details_US"/>
+          <include name="select_requestor"/>
+          <include name="rates_details"/>
+          <include name="req_details_GB"/>
+          <include name="switch_cntry_US"/>
+          <include name="select_requestor_GB"/>
+          <include name="create_req"/>
+          <include name="sup_slection"/>
+          <include name="setup"/>
+          <include name="req_details_US"/>
+          <include name="switch_cntry"/>
+          <include name="alert_call_US"/>
+          <include name="select_requestor_US"/>
+          <include name="switching_insta"/>
+          <include name="alert_call_GB"/>
+          <include name="loc_details"/>
         </methods>
-      </class> <!-- tnm_review_IND_main.CreateRequest -->
+      </class> <!-- tnm_review_main.CreateRequest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
