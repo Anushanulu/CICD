@@ -182,9 +182,7 @@ public class Step1_CreateRequest_GB {
 			Totp totp = new Totp(otpKeyStr);
 			String twoFactorCode = totp.now();
 			
-			Authenticator_App_option.click();
-			WebDriverWait wait02 = new WebDriverWait(driver, 180);
-			wait02.until(ExpectedConditions.visibilityOf(OTP_TextBox));
+			//Authenticator_App_option.click();
 
 			OTP_TextBox.sendKeys(twoFactorCode);
 			System.out.println("value fetched from box= "+OTP_TextBox.getAttribute("value"));
