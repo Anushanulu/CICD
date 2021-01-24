@@ -11,13 +11,14 @@ import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 //import io.github.bonigarcia.wdm.WebDriverManager;
 import lib.Excel;
 //import tnm_review_GB.Step1_CreateRequest_GB;
 import tnm_review_GB.Step1_CreateRequest_GB;
-
+@Listeners(generics.TestNG_Listeners.class)
 public class CreateRequest_GB {
 	
 	//public static Logger log = Logger.getLogger("TnM");
