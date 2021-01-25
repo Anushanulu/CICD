@@ -152,11 +152,13 @@ public class Step1_CreateRequest_IN {
 		wait.until(ExpectedConditions.visibilityOf(loginToContractor_Link));
 
 		loginToContractor_Link.click();
+		System.out.println("Clicked on  login To CSA Link on HomePage");
+		
 		WebDriverWait wait00 = new WebDriverWait(driver, 180);
 		wait00.until(ExpectedConditions.visibilityOf(cred_login));
 		Thread.sleep(2000);
 		cred_login.click();
-		
+		System.out.println("Selected login method--Login with credentials");
 		//new login changes
 		WebDriverWait wait01 = new WebDriverWait(driver, 180);
 		wait01.until(ExpectedConditions.visibilityOf(login_Button));
@@ -169,7 +171,7 @@ public class Step1_CreateRequest_IN {
 
 		//Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).save(System.getProperty("user.dir") + "\\src\\test\\resources\\Screens\\IND");
 		login_Button.click();
-		
+		System.out.println("Entered credentials and Clicked on  login Button");
 		try {
 
 			//Totp_Link.click();
